@@ -19,7 +19,7 @@ export function WonderPhase({ onNext }) {
             "Why does 1/3 equal 0.333... forever as an infinite recurring decimal, while 1/4 terminates cleanly at 0.25?"
           </div>
 
-          <div style={{ margin: '16px 0', width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ margin: '8px 0', width: '100%', display: 'flex', justifyContent: 'center' }}>
             <FractionDecimalVisualizer
               numerator={activeNum}
               denominator={4}
@@ -29,11 +29,11 @@ export function WonderPhase({ onNext }) {
                 setActiveNum(n);
                 setTested(true);
               }}
-              size={300}
+              size={280}
             />
           </div>
 
-          <div style={{ margin: '14px 0' }}>
+          <div style={{ margin: '8px 0', width: '100%' }}>
             <Mascot
               mood={tested ? 'happy' : 'thinking'}
               speech={
@@ -44,8 +44,8 @@ export function WonderPhase({ onNext }) {
             />
           </div>
 
-          <div style={{ marginTop: '20px' }}>
-            <button type="button" className="btn btn-primary btn-lg" onClick={onNext}>
+          <div style={{ marginTop: '12px' }}>
+            <button type="button" className="btn btn-primary" style={{ padding: '10px 24px', fontSize: '1rem', fontWeight: '800' }} onClick={onNext}>
               Discover Story Phase ➜
             </button>
           </div>
